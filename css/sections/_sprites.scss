@@ -1,0 +1,27 @@
+
+.start-sprite {
+  background: url(../images/start/start-sprites.png) no-repeat;
+  background-color:rgba(255,255,255,.1);
+  display: block;
+  transition: background-color 200ms linear;
+  &:hover{
+    background-color:$yellow;
+  }
+}
+.start-sprite--login {
+  width: 17px;
+  height: 17px;
+  background-position: -8px -8px;
+}
+
+.start-sprite--search {
+  width: 18px;
+  height: 17px;
+  background-position: -65px -8px;
+}
+
+.start-sprite--smasher {
+  width: 18px;
+  height: 18px;
+  background-position: -123px -8px;
+}

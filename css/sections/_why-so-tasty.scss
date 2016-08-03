@@ -1,0 +1,87 @@
+.section--why-so-tasty{
+  background:radial-gradient(circle farthest-side at 75% 50%, #fff, #c8c8c8);
+  position:relative;
+}
+.container--chef{
+  position:relative;
+}
+.container--chef:before{
+  content:'';
+  display:block;
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:100%;
+  height:700px;
+  background: url('../images/why-so-tasty/chef.png') no-repeat 90% bottom;
+  background-size:34%;
+}
+
+.tasty{
+  padding:98px 0 114px 62px;
+  width:634px;
+}
+
+.tasty__title{
+  font:normal 62px/74px $malina;
+  color:$blue;
+  margin:0 0 34px;
+  padding-right:62px;
+}
+
+.tasty__text {
+  margin-bottom:70px;
+  padding-right:206px;
+  font:normal 15px $helvetica;
+  color:#747474;
+  line-height:22px;
+}
+
+.characteristics__item{
+  display:inline-block;
+  width:32%;
+  font-size:0;
+  vertical-align:top;
+  box-sizing:border-box;
+  padding-right:10px;
+}
+
+.characteristics__icon{
+  display:block;
+  height:90px;
+  width:90px;
+  position:relative;
+  background:#c5c6cb;
+  border-radius:50px;
+  margin-bottom:28px;
+}
+
+.characteristics__icon-img{
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+.characteristics__icon-img--heart{
+  width:114%;
+  height:107%;
+}
+
+.characteristics__icon-img--chef-hat{
+  width:120%;
+  height:120%;
+  bottom:-10%;
+  right:-4%;
+}
+
+.characteristics__icon-img--leaves{
+  width:131%;
+  height:100%;
+}
+
+.characteristics__description{
+  display:block;
+  font:normal 16px $malina;
+  color:#747474;
+}
+

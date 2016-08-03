@@ -1,0 +1,82 @@
+.footer{
+  padding-bottom:42px;
+}
+
+.footer__logo{
+  display:inline-block;
+  padding-top:25px;
+  margin-right:48px;
+}
+
+.footer__logo-img{
+  width:225px;
+}
+
+.footer__copyright{
+  display:inline-block;
+  vertical-align:top;
+  padding-top:44px;
+  font:normal 14px $helvetica;
+  color: #8d8d8d;
+  margin-right:34px;
+}
+
+.footer__address{
+  @extend .footer__copyright;
+}
+
+.footer__social{
+  float:right;
+  padding-top:40px;
+}
+
+.social__item{
+  display:inline-block;
+  margin-left:29px;
+}
+
+.social-sprite {
+  background-image: url(../images/footer/social-sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+  &--facebook{
+    width: 11px;
+    height: 22px;
+    background-position: -25px -25px;
+    &:hover{
+      background-position: -86px -25px;
+    }
+  }
+  &--instagram{
+    width: 22px;
+    height: 22px;
+    background-position: -147px -25px;
+    &:hover{
+      background-position: -25px -97px;
+    }
+  }
+  &--ok{
+    width: 13px;
+    height: 22px;
+    background-position: -97px -97px;
+    &:hover{
+      background-position: -160px -97px;
+    }
+  }
+  &--twitter{
+    width: 22px;
+    height: 18px;
+    background-position: -25px -169px;
+    &:hover{
+      background-position: -97px -169px;
+    }
+  }
+  &--vkontakte{
+    width: 22px;
+    height: 13px;
+    background-position: -169px -169px;
+    &:hover{
+      background-position: -219px -25px;
+    }
+  }
+}

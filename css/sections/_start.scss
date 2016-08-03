@@ -1,0 +1,236 @@
+.section--start{
+  background: radial-gradient(circle farthest-side at 25% 70%, #e54548, #a5151a);
+
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
+
+.presentation{
+  padding-bottom:60px;
+}
+.frame{
+  margin-bottom:60px;
+  position:relative;
+}
+
+.frame:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.frame__header{
+  font: normal 150px $malina;
+  opacity:.1;
+  color:white;
+  position:absolute;
+  top:30%;
+}
+
+.frame__side{
+  float:left;
+  width:138px;
+  margin-right:48px;
+}
+
+.ingredients{
+  padding-top:70px;
+  margin-bottom:200px;
+}
+
+.ingredients__pic{
+  padding-left:45px;
+  margin-bottom:16px;
+  position:relative;
+  &:before{
+    content:'';
+    display:block;
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    top:6%;
+    left:89.5%;
+    border-left:none;
+    border-right:15px solid rgba(#fff,.9);
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent;
+  }
+  &:hover .ingredients__pic-img{
+    background-color:$yellow;
+  }
+}
+
+.ingredients__pic:hover:before{
+  visibility:visible;
+  opacity:1;
+  transition:opacity 500ms linear;
+}
+
+.ingredients__pic-img{
+  padding:12px;
+  border-radius:50px;
+}
+
+.ingredients__list{
+  z-index:5;
+  top:-166%;
+  left:100%;
+  opacity:0;
+  position:absolute;
+  background:rgba(#fff,.92);
+  border-radius:20px;
+  padding:35px;
+  box-sizing:border-box;
+  width:380px;
+  display:table;
+  visibility:hidden;
+  &:before{
+    content:'';
+    display:block;
+    height:100%;
+    width:70px;
+    position:absolute;
+    right:100%;
+    top:0;
+  }
+}
+
+.ingredients__pic:hover .ingredients__list{
+  visibility:visible;
+  opacity:1;
+  transition:opacity 500ms linear;
+}
+
+.ingredients__item{
+  vertical-align:top;
+  display:table-row;
+  height:38px;
+}
+
+.ingredients__icon{
+  display:table-cell;
+}
+
+.ingredients__icon-img{
+  background-size: contain;
+  width:23px;
+  height:23px;
+  background-repeat:no-repeat;
+  &--flour{
+    background-image: url(../images/start/flour.png);
+  }
+  &--eggs{
+    background-image: url(../images/start/eggs.png);
+  }
+  &--sugar{
+    background-image: url(../images/start/sugar.png);
+  }
+  &--butter{
+    background-image: url(../images/start/butter.png);
+  }
+  &--milk{
+    background-image: url(../images/start/milk.png);
+  }
+}
+
+.ingredients__name{
+  display:table-cell;
+}
+
+.ingredients__amount{
+  display:table-cell;
+}
+
+.ingredients__title{
+  color:white;
+  padding-left:20px;
+  font-size:15px;
+}
+
+.side-info__title{
+  color:white;
+  padding-left:16px;
+  font-size:13px;
+  letter-spacing:1px;
+}
+
+.side-info__content{
+  color:white;
+  padding-left:10px;
+  font:normal normal 24px $malina;
+}
+
+.frame__pic{
+  float:left;
+  width:434px;
+  height:448px;
+  background: url('../images/start/cupcake.png') no-repeat 0 -14px;
+  background-size: cover;
+  position:relative;
+}
+
+.frame__pic-img{
+  position: absolute;
+  width: 100%;
+  top: -15px;
+}
+
+.frame__main{
+  float:right;
+  width:408px;
+  color:white;
+}
+.frame-description{
+  padding-top:12px;
+}
+.frame-description__title{
+  margin:8px 0 28px;
+  font: normal normal 62px $malina;
+  line-height:72px;
+}
+
+.frame-description__text{
+  font-size:14px;
+  line-height:21px;
+  margin-bottom:20px;
+}
+
+.frame-description__bottom{
+  vertical-align:top;
+}
+.frame-description__price{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 40px;
+  font: 62px $malina;
+}
+.frame-description__order-button-container{
+  display:inline-block;
+}
+.frame-description__order-button{
+  display:inline-block;
+  vertical-align:middle;
+  font:bold 14px $helvetica;
+  color:rgb(165, 22, 27);
+  padding:12px 22px;
+  border-radius:54px;
+  background-color:$yellow;
+  &:hover{
+    background-color:#641a00;
+    color:$yellow;
+  }
+}
+.presentation__control{
+  text-align:center;
+}
+
+.presentation__frame-dot{
+  margin:0 5px;
+  width:5px;
+  height:5px;
+  border-radius:5px;
+  background-color:white;
+  display:inline-block;;
+}

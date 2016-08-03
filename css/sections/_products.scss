@@ -1,0 +1,121 @@
+.section--products{
+  background:linear-gradient(90deg, rgba(255, 170, 37, 0.9), rgba(253, 182, 7, 0.9)),
+  url('../images/products/pattern.png');
+}
+
+.products__upper{
+  padding-top:90px;
+  width:880px;
+  margin:0 auto 84px;
+}
+
+.products__title{
+  text-align:center;
+  font:normal 62px $malina;
+  margin:0 0 5px;
+  color:#393939
+}
+
+.products__text{
+  font:normal 16px $helvetica;
+  text-align:center;
+  margin:0 0 5px;
+  line-height:22px;
+  color:#883213;
+}
+
+.products__list{
+  display:flex;
+  flex-flow:row wrap;
+}
+.products__item{
+  vertical-align:top;
+  font-size:0;
+  flex: 1 1 25%;
+  margin-bottom: 64px;
+}
+
+.products__pic{
+  width:176px;
+  height:176px;
+  position:relative;
+  background:#e59e16;
+  border-radius:50%;
+  margin:0 auto 14px;
+}
+
+.products__img--cake{
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:100%;
+}
+
+.products__img--cookie{
+  position:absolute;
+  bottom: 12px;
+  right: -34px;
+  width: 140%;
+}
+
+.products__img--donut{
+  position:absolute;
+  bottom: -3px;
+  right: -5px;
+  width: 108%;
+}
+
+.products__img--roulet{
+  position:absolute;
+  bottom: 5px;
+  right: 10px;
+  width: 111%;
+}
+
+.products__img--zephyr{
+  position:absolute;
+  bottom: 11px;
+  right: -7px;
+  width: 106%;
+}
+
+.products__img--chocolate{
+  position:absolute;
+  bottom: 2px;
+  right: -14px;
+  width: 120%;
+
+}
+
+.products__img--cupcake{
+  position:absolute;
+  bottom: -12px;
+  right: 10px;
+  width: 88%;
+}
+
+.products__img--candy{
+  position:absolute;
+  bottom: 22px;
+  right: 5px;
+  width: 112%;
+  transform:scaleX(-1);
+}
+
+
+
+.products__name{
+  font:normal 32px $malina;
+  text-align:center;
+  margin:0 0 8px;
+  color:#393939
+}
+
+.products__description{
+  font:normal 14px $helvetica;
+  text-align:center;
+  margin:0;
+  line-height:18px;
+  color:#ab594a;
+  padding:0 20px;
+}

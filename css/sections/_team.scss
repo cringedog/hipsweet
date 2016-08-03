@@ -1,0 +1,272 @@
+.section--team{
+  background:radial-gradient(circle farthest-corner at 30% 55%,#fbfcfc, #cacac9);
+}
+
+.team{
+  padding:80px 0 118px;
+}
+
+.team__upper{
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.team__title{
+  display:block;
+  float:left;
+  font:normal 62px $malina;
+  color:$blue;
+  width:340px;
+  margin:0 44px 0 0;
+  line-height:74px;
+}
+
+.team__tabs{
+  float:left;
+  display:block;
+  width:60%;
+  margin:4px 0 0;
+}
+
+.team__member-switcher{
+  display:inline-block;
+  width:32%;
+}
+
+.team__member-button{
+  border-radius:20px;
+  padding:15px 0px 30px 28px;
+  display:block;
+  position:relative;
+  background:transparent;
+}
+
+.team__member-name{
+  margin:0 0 4px;
+  color:$blue;
+  font: normal 30px $malina;
+  line-height:38px;
+}
+
+.team__member-degree{
+  margin:0 0;
+  letter-spacing:1px;
+  color:#8d8d8d;
+  font:normal 16px $helvetica;
+}
+
+.team__member-button:hover{
+  background-color:$brown;
+  & .team__member-name{
+    color:#ffa92b;
+  }
+  & .team__member-degree{
+    color:#fff;
+  }
+}
+
+.team__member-switcher--active .team__member-button{
+  background-color:$brown;
+  &:after{
+    content:'';
+    display:block;
+    border-bottom:none;
+    border-left:18px transparent solid;
+    border-right:18px transparent solid;
+    border-top:12px solid $brown;
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translateX(-50%);
+  }
+  & .team__member-name{
+    color:#ffa92b;
+  }
+  & .team__member-degree{
+    color:#fff;
+  }
+}
+
+
+.team__lower{
+  background: url('../images/team/chef.png') no-repeat 38% bottom;
+  padding:90px 0 140px;
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
+
+.team__member{
+  display:none;
+  &.team__member--active{
+    display:block;
+  }
+}
+.team__description--left{
+  float:left;
+  width:272px;
+}
+
+.team__description--right{
+  float:right;
+  width:340px;
+}
+
+.team__paragraph{
+  line-height:21px;
+  font-size:14px;
+}
+.form__anchor{
+  color:blue;
+  text-decoration:underline;
+}
+.form{
+  width:842px;
+  box-sizing:border-box;
+  display:block;
+  margin:0 auto;
+  background: url('../images/team/form-bg.png') no-repeat;
+  border-radius:20px;
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
+
+.form__aside{
+  display:block;
+  position:absolute;
+  top:50%;
+  left:-100%;
+  width:100%;
+  text-align:center;
+  transform:translateY(-50%);
+  font: normal 62px $malina;
+  color:#fff;
+  letter-spacing:6px;
+
+}
+
+.form__main{
+  display:block;
+  margin:0;
+  width:410px;
+  background:rgba(#1d1d20, .84);
+  position:relative;
+  float:right;
+  box-sizing:border-box;
+  padding:77px 46px 72px;
+  border-radius:0 20px 20px 0;
+}
+
+.form__input{
+  padding: 3px 2px 18px;
+  background-color:transparent;
+  border:none;
+  border-bottom:2px solid white;
+  outline:none;
+  color:white;
+  width:100%;
+  margin-bottom:38px;
+  &::placeholder{
+    color:white;
+    opacity:1;
+    font:normal 16px $helvetica;
+  }
+  &:focus::placeholder{
+    color:transparent;
+  }
+}
+
+.form__checkbox-label{
+  color:white;
+  padding-left:20px;
+  position:relative;
+  &:before{
+    content:'';
+    display:block;
+    width:12px;
+    height:12px;
+    position:absolute;
+    background:white;
+    right:93%;
+    top:50%;
+    transform:translateY(-50%);
+    border:1px black solid;
+  }
+  &:after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 5px;
+    position: absolute;
+    background:transparent;
+    right: 88%;
+    top: 66%;
+    transform-origin: bottom left;
+    border-bottom: 2px solid $yellow;
+    border-left: 2px solid $yellow;
+    opacity:0;
+    transition:  100ms linear;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+
+.form__checkbox-input{
+  display:none;
+  &:checked +.form__checkbox-label::after{
+    border-color: black;
+    opacity:1;
+  }
+}
+
+.form__submit{
+  position:absolute;
+  border:none;
+  outline:none;
+  top:97%;
+  left:97%;
+  transform:translate(-50%,-50%);
+  width:96px;
+  height:96px;
+  background:$yellow;
+  border-radius:100%;
+  &:after{
+    content:'';
+    display:block;
+    border-left:30px solid #9d5125;
+    border-right:none;
+    border-top: transparent solid 25px;
+    border-bottom: transparent solid 25px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%);
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #9d5125;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+  }
+  &:hover {
+    &:after{
+      border-left-color:#A5161B;
+    }
+    &:before{
+      background-color:#A5161B;
+    }
+  }
+}

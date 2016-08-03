@@ -1,0 +1,16 @@
+@import "fonts/_fonts.scss";
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+@import "adjustments/_normalize";
+@import "adjustments/_adjustments.scss";
+@import "sections/_header.scss";
+@import 'sections/_start.scss';
+@import 'sections/_sprites.scss';
+@import 'sections/_why-so-tasty.scss';
+@import 'sections/_products.scss';
+@import 'sections/_team.scss';
+@import 'sections/_faq.scss';
+@import 'sections/_map.scss';
+@import 'sections/_footer.scss';
+@import '../js/slick-1.6.0/slick/slick.scss';
+
